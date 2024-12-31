@@ -1,80 +1,28 @@
-/* General Styles */
+/* Style untuk body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    color: #4CAF50;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 2.5em;
+  text-align: center;
+  color: #5a5a5a;
+  margin-top: 20px;
 }
 
-/* Category Container */
+h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+/* Style untuk kategori dan daftar */
 .category {
-    width: 80%;
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Category Header */
-.category h2 {
-    color: #4CAF50;
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-/* List of AI Names */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin: 8px 0;
-}
-
-/* Links */
-a {
-    color: #007BFF;
-    text-decoration: none;
-    font-size: 1.1em;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #0056b3;
-}
-
-a:active {
-    color: #003366;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .category {
-        width: 90%;
-    }
-    
-    h1 {
-        font-size: 2em;
-    }
-    
-    .category h2 {
-        font-size: 1.6em;
-    }
-    
-    a {
-        font-size: 1em;
-    }
-}
+  margin: 20px auto;
+  padding: 20px;
