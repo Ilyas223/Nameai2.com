@@ -1,79 +1,80 @@
-/* Reset dan set dasar untuk body */
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Heading utama */
 h1 {
-  text-align: center;
-  color: #5a5a5a;
-  margin-top: 20px;
-  font-size: 2rem;
+    color: #4CAF50;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5em;
 }
 
-/* Gaya untuk kategori AI */
+/* Category Container */
 .category {
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 1200px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Judul kategori */
-h2 {
-  color: #333;
-  font-size: 1.5rem;
-  margin-top: 20px;
-  text-transform: uppercase;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 10px;
+/* Category Header */
+.category h2 {
+    color: #4CAF50;
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
 
-/* Daftar AI */
-.category ul {
-  list-style-type: none;
-  padding: 0;
+/* List of AI Names */
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.category ul li {
-  margin: 10px 0;
+li {
+    margin: 8px 0;
 }
 
-/* Link untuk AI */
-.category ul li a {
-  color: #0073e6;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+/* Links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
 }
 
-/* Efek hover pada link */
-.category ul li a:hover {
-  color: #005bb5;
+a:hover {
+    color: #0056b3;
 }
 
-/* Mobile responsiveness */
+a:active {
+    color: #003366;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-
-  .category {
-    padding: 15px;
-    max-width: 100%;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-  }
+    .category {
+        width: 90%;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .category h2 {
+        font-size: 1.6em;
+    }
+    
+    a {
+        font-size: 1em;
+    }
 }
